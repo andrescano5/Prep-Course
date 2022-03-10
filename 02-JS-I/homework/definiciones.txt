@@ -1,0 +1,26 @@
+Variables: Son una espece de contenedores donde se pueden almacenar valores o datos. Esos tipos de datos pueden ser numeros, Strings funciones u objetos.
+
+Strings: Son fracciones o pedazos de textos que se escriben entre comillas. Estos strings pueden ser una sola palabra o una oración pero deben ser escritas entre comillas simpler o dobles. Los numeros dentro de las comillas tambien son strings.
+
+Funciones: Son bloques de código que ejecutan una acción que el programador haya determinado que hacer. Para que estas funcionen deben invocarse, es decir se debe escribir el nombre de la función con parentesis al final del nombre. Ej: 'cortarTexto()'.
+Cada funcion se compone de 3 partes, la primera es donde se determina que es una funcion asignandole la palabra 'function' que es una palabra reservada mas el nombre de la funcion que el programador va a determinar su nombre dependiendo de la acción que quiera que realice, por ejemplo "function hacerTe".
+Seguido tenemos 2 parentesis donde se le van a agregar los parametros de la función, es decir los elementos que vamos a utilizar en la función. Ejemplo, si nuestra funcion es "cebarMate" dentro de los parametros podemos poner "(yerba, agua, azucar)" y la función hasta el momento nos quedaría asi: "function cebarMate(yerba, agua, azucar)".
+Lo que viene despues de los parametros son los argumentos, que se escriben entre parentesis "{}". Dentro de los argumentos ponemos lo que queremos que haga la función, en nuestro caso podemos poner si queremos mate amargo o dulce. Ejemplo:
+
+function cebarMate(yerba, agua, azucar) {
+    const input = prompt('Seleccione que lleva el mate: - escriba correctamente', 'Ej: "yerba, agua y azucar" o "yerba y agua"').toLowerCase(); 
+    if(input === "yerba y agua"){
+        alert("Toma este rico Amargo") 
+    } else if(input === "yerba, agua y azucar"){
+        alert("Toma un buen mate dulce")
+    } 
+    else {
+        alert("No quieres")
+    }
+}
+
+El "if" es un control de flujo que permite a una funcion que si en el argumerto una de las condiciones es true, se sigue ejecutando la funcion, pero si da false esta se detiene. Ademas podemos hacer que si cumple con ciertos parametros se pueda ejecutar de una o varias maneras y si ninguna de las maneras anteriores se cumplen, entonces la ejecuciòn de la funciòn se detiene 
+
+Booleanos: en javascript los booleanos significan verdadero o falso. True tiene un valor binario "1" mientras que False "0".
+Estos nos sirven para determinar ciertos comportamientos dentro de las funciones.
+
